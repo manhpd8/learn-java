@@ -1,14 +1,12 @@
 package leetcode;
 public class main {
     public static void main(String[] args) {
-        l344 l344 = new l344();
-        char[] JavaCharArray = {'1','2','3','4','5'};
-        l344.reverseString(JavaCharArray);
+        int[] ar = new int[]{1,2,3,2,1};
+        int[][] ar2 = {{1,2,3},{4,5,6},{7,8,9}};
+        new l118().generate(5);
     }
-    //1 2 3 4 5 6 7 8 9
-    //a b b a
-    //i=1 1 2 max 2 b=3
-    //i=2 j=3 ==b b=3
-    
+public static void tests(int[] ar){
+        ar[0]=2;
+}
 
 }
