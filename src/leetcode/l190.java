@@ -2,14 +2,13 @@ package leetcode;
 
 public class l190 {
     public int reverseBits(int n) {
-        String bitx = Long.toBinaryString(n);
-        while(bitx.length() <32){
-            bitx = "0"+bitx;
+        int result=0;
+        for(int i=1;i<=32;i++){
+            result <<=1;//dich trai 1 bit
+            result |= n&1;
+            n>>=1;
         }
-        System.out.println(bitx);
-        String reverBit = new StringBuilder(bitx).reverse().toString();
-        //return Integer.parseInt(reverBit,2);
-        return convert2int(reverBit);
+        return result;
     }
 
     public static void main(String[] args) {
