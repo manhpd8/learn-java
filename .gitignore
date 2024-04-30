@@ -20,6 +20,7 @@ bin/
 *.iml
 *.ipr
 *.class
+/out
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
